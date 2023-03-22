@@ -6,6 +6,7 @@ import { currencies } from "../currencies";
 export const Form = () => {
 
   const [currency, setCurrency] = useState(currencies[0].shortName);
+  const [amount, setAmount] = useState("");
 
   const onSubmit = (event) => {
     event.preventDefault();
@@ -24,12 +25,13 @@ export const Form = () => {
               Kwota:*
             </span>
             <input
+              value={amount}
+              onChange={({target})=>setAmount(target.value)}
               type="number"
               min="1"
               step="0.01"
               placeholder="Wpisz kwotę w PLN"
               className="form__field"
-              name="amount"
               required
             /> PLN
 
