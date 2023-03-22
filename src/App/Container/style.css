@@ -1,0 +1,12 @@
+.container {
+    flex-basis: 700px;
+    margin: 20px;
+    padding: 40px;
+    font-size: 20px;
+    font-weight: 300;
+    background-color: rgba(194, 199, 202, 0.818);
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 1px 34px 45px rgba(44, 44, 56, 1);
+    -moz-box-shadow: 1px 1px 34px 45px rgba(44, 44, 56, 1);
+    box-shadow: 1px 1px 34px 45px rgba(44, 44, 56, 1);
+}
