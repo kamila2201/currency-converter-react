@@ -1,10 +1,10 @@
 import { useState } from "react";
 import "./style.css";
 import { currencies } from "../currencies";
-import {Result} from "./Result";
+import { Result } from "./Result";
 
 
-export const Form = ({calculateResult, result}) => {
+export const Form = ({ calculateResult, result, setResult }) => {
 
   const [currency, setCurrency] = useState(currencies[0].shortName);
   const [amount, setAmount] = useState("");
@@ -13,6 +13,12 @@ export const Form = ({calculateResult, result}) => {
     event.preventDefault();
     calculateResult(currency, amount);
   }
+
+  const onReset = () => {
+    setAmount("");
+    setResult("");
+  }
+
 
 
   return (
@@ -64,7 +70,13 @@ export const Form = ({calculateResult, result}) => {
 
       <div className="form__end">
         <button className="form__button">Przelicz</button>
-        <button type="reset" className="form__button">Wyczyść</button>
+        <button
+          type="reset"
+          className="form__button"
+          onClick={onReset}
+        >
+          Wyczyść
+        </button>
       </div>
 
       <Result result={result} />
