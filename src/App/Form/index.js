@@ -30,7 +30,7 @@ export const Form = ({ calculateResult, result, setResult }) => {
         <p>
           <label className="form__label">
             <span className="form__labelText">
-              Kwota:*
+              Kwota w PLN*:
             </span>
             <input
               value={amount}
@@ -41,7 +41,7 @@ export const Form = ({ calculateResult, result, setResult }) => {
               placeholder="Wpisz kwotę w PLN"
               className="form__field"
               required
-            /> PLN
+            /> 
 
           </label>
         </p>
