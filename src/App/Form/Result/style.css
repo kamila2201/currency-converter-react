@@ -1,4 +1,11 @@
 .result {
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+
+.result__text {
+    padding-left: 5px;
     color: #05396a;
     font-weight: 500;
 }
