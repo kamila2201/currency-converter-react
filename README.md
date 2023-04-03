@@ -3,11 +3,20 @@
 ## Description
 I am pleased to present my website which I created as a homework during frontent development online course - [YouCode](https://youcode.pl/). You can use my application if you want to check how much money you will receive by exchanging a certain amount in zlotys for one of the four currencies I propose.
 
+This project was bootstrapped with Create React App.
 ## Check it out!
 https://kamila2201.github.io/currency-converter-react/
 ![website animation gif](public/animation.gif)
 
-This project was bootstrapped with Create React App.
+## Technologies used
+- HTML
+- CSS
+- JavaScript
+- BEM
+- Grid
+- Flex
+- ES6+ features
+
 ## Available Scripts
 
 In the project directory, you can run:
