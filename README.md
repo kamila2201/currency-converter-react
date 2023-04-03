@@ -5,6 +5,7 @@ I am pleased to present my website which I created as a homework during frontent
 
 ## Check it out!
 https://kamila2201.github.io/currency-converter-react/
+![website animation gif](public/animation.gif)
 
 This project was bootstrapped with Create React App.
 ## Available Scripts
