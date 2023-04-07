@@ -19,8 +19,6 @@ export const Form = ({ calculateResult, result, setResult }) => {
     setResult("");
   }
 
-
-
   return (
     <form className="form" onSubmit={onSubmit}>
       <fieldset className="form__fieldset">
