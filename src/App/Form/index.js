@@ -15,6 +15,7 @@ export const Form = ({ calculateResult, result, setResult }) => {
   }
 
   const onReset = () => {
+    setCurrency(currencies[0].shortName);
     setAmount("");
     setResult("");
   }
