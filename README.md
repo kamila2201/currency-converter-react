@@ -1,7 +1,7 @@
 # Currency converter
 
 ## Description
-I am pleased to present my website which I created as a homework during frontent development online course - [YouCode](https://youcode.pl/). You can use my application if you want to check how much money you will receive by exchanging a certain amount in zlotys for one of the four currencies I propose.
+I am pleased to present my website which I created as a homework during frontent development online course - [YouCode](https://youcode.pl/). You can use my application if you want to check how much money you will receive by exchanging a certain amount in zlotys for one of the four currencies I propose. Using the website, you can additionally check the current date and time.
 
 This project was bootstrapped with Create React App.
 ## Check it out!
