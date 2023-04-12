@@ -1,7 +1,7 @@
 .container {
     flex-basis: 700px;
     margin: 20px;
-    padding: 40px;
+    padding: 10px 40px;
     font-size: 20px;
     font-weight: 300;
     background-color: rgba(194, 199, 202, 0.818);
