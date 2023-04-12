@@ -3,6 +3,7 @@ import { Header } from "./Header";
 import { Form } from "./Form";
 import { Container } from "./Container";
 import { currencies } from "./currencies";
+import {DateAndTime} from "./DateAndTime";
 
 function App() {
   const [result, setResult] = useState("");
@@ -20,6 +21,7 @@ function App() {
   return (
     <Container>
       <div className="App">
+        <DateAndTime />
         <Header />
         <Form 
         result={result}
