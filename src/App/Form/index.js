@@ -5,12 +5,22 @@ import Result from "./Result";
 import { currencies } from "../currencies";
 
 
-const Form = () => {
+const Form = ({result, calculateResult}) => {
     const [amount, setAmount] = useState("");
     const [currency, setCurrency] = useState(currencies[0].shortName)
 
+    const onSubmit = (event) => {
+        event.preventDefault();
+        calculateResult(currency, amount);
+    }
+
+    const onReset = () => {
+        setAmount("");
+        setCurrency(currencies[0].shortName);
+    }
+
     return (
-        <form className="form">
+        <form className="form" onSubmit={onSubmit}>
             <fieldset className="form__fieldset">
                 <legend className="form__legend">Currency converter</legend>
                 <p>
@@ -48,9 +58,15 @@ const Form = () => {
             </fieldset>
             <div className="form__end">
                 <button className="form__button">Convert</button>
-                <button className="form__button" type="reset">Delete</button>
+                <button 
+                onClick={onReset}
+                className="form__button"
+                type="reset"
+                >
+                    Delete
+                </button>
             </div>
-            <Result />
+            <Result result={result}/>
             <Footer />
         </form>
     )
