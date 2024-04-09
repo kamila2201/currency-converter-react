@@ -1,0 +1,11 @@
+.container {
+    flex-basis:900px;
+    padding: 20px;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.827);
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 20px 21px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 0px 20px 21px rgba(66, 68, 90, 1);
+    box-shadow: 0px 0px 20px 21px rgba(66, 68, 90, 1);
+
+}
