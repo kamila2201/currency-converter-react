@@ -14,7 +14,7 @@ const Clock = () => {
 
 
     return (
-        <p class="clock">
+        <p className="clock">
             Today is {date.toLocaleDateString("en-US",{
                  weekday: "long",
                  month: "long",
