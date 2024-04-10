@@ -15,11 +15,14 @@ const Clock = () => {
 
     return (
         <p>
-            Dzisiaj jest {date.toLocaleDateString({
-                weekday: "long",
-                day: "numeric",
-                month: "long",
-            })}, {date.toLocaleTimeString()}
+            Today is {date.toLocaleDateString("en-US",{
+                 weekday: "long",
+                 month: "long",
+                 day: "numeric",
+                 hour: "2-digit",
+                 minute: "2-digit",
+                 second: "2-digit",
+            })}
         </p>
     )
 
