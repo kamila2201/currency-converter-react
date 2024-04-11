@@ -1,4 +1,4 @@
-import "./style.css";
+import {StyledForm, Legend, Fieldset, LabelText, Input, End, Button, Select} from "./styled"
 import {useState} from 'react';
 import Footer from "./Footer";
 import Result from "./Result";
@@ -20,55 +20,52 @@ const Form = ({result, calculateResult}) => {
     }
 
     return (
-        <form className="form" onSubmit={onSubmit}>
-            <fieldset className="form__fieldset">
-                <legend className="form__legend">Currency converter</legend>
+        <StyledForm onSubmit={onSubmit}>
+            <Fieldset>
+                <Legend>Currency converter</Legend>
                 <p>
                     <label className="form__label">
-                        <span className="form__labelText">Amount in PLN*:</span>
-                        <input 
+                        <LabelText>Amount in PLN*:</LabelText>
+                        <Input
                         value={amount}
-                        onChange={({target})=> setAmount(target.value)}
-                        className="form__field" 
+                        onChange={({target})=> setAmount(target.value)} 
                         type="number" 
                         min="1" 
                         step="0.01" 
                         name="amount"
                         placeholder="Enter the amount in PLN" 
-                        required 
+                        required
                         />
                     </label>
                 </p>
                 <p>
-                    <label className="form__label">
-                        <span className="form__labelText">Currency:</span>
-                        <select 
+                    <label>
+                        <LabelText>Currency:</LabelText>
+                        <Select 
                         value={currency}
-                        onChange={({target})=> setCurrency(target.value)}
-                        className="form__field" 
+                        onChange={({target})=> setCurrency(target.value)} 
                         name="currency">
                             {currencies.map(currency => (
                                 <option key={currency.shortName} value={currency.shortName}>
                                     {currency.name}
                                 </option>
                             ))}
-                        </select>
+                        </Select>
                     </label>
                 </p>
-            </fieldset>
-            <div className="form__end">
-                <button className="form__button">Convert</button>
-                <button 
+            </Fieldset>
+            <End>
+                <Button>Convert</Button>
+                <Button 
                 onClick={onReset}
-                className="form__button"
                 type="reset"
                 >
                     Delete
-                </button>
-            </div>
+                </Button>
+            </End>
             <Result result={result}/>
             <Footer />
-        </form>
+        </StyledForm>
     )
 }
 

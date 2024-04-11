@@ -1,30 +1,32 @@
-.form {
+import styled, {css} from "styled-components";
+
+export const StyledForm = styled.form`
     margin: 20px;
     padding: 10px;
     font-size: 20px;
-}
+`;
 
-.form__legend {
+export const Fieldset = styled.fieldset`
+    border: 2px solid #296e54;
+    border-radius: 5px;
+`;
+
+export const Legend = styled.legend`
     padding: 10px;
     color: white;
     background-color: #296e54;
     border-radius: 5px;
-}
+`;
 
-.form__fieldset {
-    border: 2px solid #296e54;
-    border-radius: 5px;
-}
-
-.form__labelText {
+export const LabelText = styled.span`
     display: inline-block;
     margin-right: 5px;
     width: 100%;
     max-width: 300px;
     font-weight: 500;
-}
+`;
 
-.form__field {
+const sharedStyles = css`
     padding: 10px;
     width: 100%;
     max-width: 400px;
@@ -34,23 +36,30 @@
     -webkit-box-shadow: 0px 0px 9px 3px rgba(66, 68, 90, 1);
     -moz-box-shadow: 0px 0px 9px 3px rgba(66, 68, 90, 1);
     box-shadow: 0px 0px 9px 3px rgba(66, 68, 90, 1);
-}
+`;
 
-.form__field:required {
-    border-width: 4px;
-}
+export const Input = styled.input`
+    ${sharedStyles}
 
-.form__field:invalid {
-    background-color: rgb(242, 183, 183);
-}
+    &:required {
+        border-width: 4px;
+    }
+    &:invalid {
+        background-color: rgb(242, 183, 183);
+    }
+`;
 
-.form__end {
+export const Select = styled.select`
+    ${sharedStyles}
+`;
+
+export const End = styled.div`
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-}
+`;
 
-.form__button {
+export const Button = styled.button`
     flex-basis:300px;
     margin-top: 10px;
     padding: 10px;
@@ -58,13 +67,14 @@
     background-color: #296e54;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
-}
 
-.form__button:hover {
-    background-color: #598c79;
-}
+    &:hover{
+        background-color: #598c79;
+    }
 
-.form__button:active {
-    border: 2px solid #296e54;
-}
+    &:active {
+        border: 2px solid #296e54;
+    }
+`;
+
+
