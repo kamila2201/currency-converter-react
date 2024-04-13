@@ -7,10 +7,9 @@ import {
     Legend,
     Fieldset,
     LabelText,
-    Input,
+    Field,
     End,
     Button,
-    Select,
 } from "./styled";
 
 
@@ -35,7 +34,7 @@ const Form = ({ result, calculateResult }) => {
                 <p>
                     <label className="form__label">
                         <LabelText>Amount in PLN*:</LabelText>
-                        <Input
+                        <Field
                             value={amount}
                             onChange={({ target }) => setAmount(target.value)}
                             type="number"
@@ -50,7 +49,8 @@ const Form = ({ result, calculateResult }) => {
                 <p>
                     <label>
                         <LabelText>Currency:</LabelText>
-                        <Select
+                        <Field
+                            as="select"
                             value={currency}
                             onChange={({ target }) => setCurrency(target.value)}
                             name="currency">
@@ -59,7 +59,7 @@ const Form = ({ result, calculateResult }) => {
                                     {currency.name}
                                 </option>
                             ))}
-                        </Select>
+                        </Field>
                     </label>
                 </p>
             </Fieldset>
