@@ -1,4 +1,6 @@
-.container {
+import styled from "styled-components";
+
+export const StyledContainer = styled.main`
     flex-basis:900px;
     padding: 20px;
     margin: 50px auto;
@@ -7,5 +9,4 @@
     -webkit-box-shadow: 0px 0px 20px 21px rgba(66, 68, 90, 1);
     -moz-box-shadow: 0px 0px 20px 21px rgba(66, 68, 90, 1);
     box-shadow: 0px 0px 20px 21px rgba(66, 68, 90, 1);
-
-}
+`;
