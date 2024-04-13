@@ -1,11 +1,11 @@
 import { useCurrentDate } from "./useCurrentDate";
-import { Paragraph } from "./styled";
+import { Wrapper } from "./styled";
 
 const Clock = () => {
     const date = useCurrentDate()
 
     return (
-        <Paragraph>
+        <Wrapper>
             Today is {date.toLocaleDateString("en-US", {
                 weekday: "long",
                 month: "long",
@@ -14,7 +14,7 @@ const Clock = () => {
                 minute: "2-digit",
                 second: "2-digit",
             })}
-        </Paragraph>
+        </Wrapper>
     )
 
 }

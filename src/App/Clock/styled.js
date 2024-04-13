@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 
-export const Paragraph = styled.p`
+export const Wrapper = styled.p`
     margin: 0;
     font-family: monospace;
     text-align: right;

@@ -1,13 +1,13 @@
-import {Paragraph, Text} from "./styled";
+import {Wrapper, Text} from "./styled";
 
 const Result = ({ result }) => (
     !!result && (
-        <Paragraph>
+        <Wrapper>
             You will receive
             <Text>
                 {result.finalAmount.toFixed(2)}&nbsp;{result.currency}
             </Text>
-        </Paragraph>
+        </Wrapper>
     )
 )
 
