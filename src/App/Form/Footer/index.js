@@ -1,11 +1,11 @@
-import "./style.css";
+import {StyledFooter, Link} from "./styled";
 
 const Footer = () => (
-    <footer className="footer">
+    <StyledFooter>
         Currency rates come from
-        <a className="footer__link" href="https://internetowykantor.pl/" title="click to go to the website"
-            target="_blank" rel="norefferer">internetowykantor.pl</a>
-    </footer>
+        <Link href="https://internetowykantor.pl/" title="click to go to the website"
+            target="_blank" rel="norefferer">internetowykantor.pl</Link>
+    </StyledFooter>
 )
 
 export default Footer;
