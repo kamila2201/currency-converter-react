@@ -1,13 +1,13 @@
-import "./style.css";
+import {Paragraph, Text} from "./styled";
 
 const Result = ({ result }) => (
     !!result && (
-        <p className="result">
+        <Paragraph>
             You will receive
-            <strong className="result__text">
+            <Text>
                 {result.finalAmount.toFixed(2)}&nbsp;{result.currency}
-            </strong>
-        </p>
+            </Text>
+        </Paragraph>
     )
 )
 
