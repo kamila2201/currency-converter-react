@@ -1,4 +1,4 @@
-import styled, {css} from "styled-components";
+import styled from "styled-components";
 
 export const StyledForm = styled.form`
     margin: 20px;
@@ -26,7 +26,7 @@ export const LabelText = styled.span`
     font-weight: 500;
 `;
 
-const sharedStyles = css`
+export const Field = styled.input`
     padding: 10px;
     width: 100%;
     max-width: 400px;
@@ -36,10 +36,6 @@ const sharedStyles = css`
     -webkit-box-shadow: 0px 0px 9px 3px rgba(66, 68, 90, 1);
     -moz-box-shadow: 0px 0px 9px 3px rgba(66, 68, 90, 1);
     box-shadow: 0px 0px 9px 3px rgba(66, 68, 90, 1);
-`;
-
-export const Input = styled.input`
-    ${sharedStyles}
 
     &:required {
         border-width: 4px;
@@ -47,10 +43,6 @@ export const Input = styled.input`
     &:invalid {
         background-color: rgb(242, 183, 183);
     }
-`;
-
-export const Select = styled.select`
-    ${sharedStyles}
 `;
 
 export const End = styled.div`
