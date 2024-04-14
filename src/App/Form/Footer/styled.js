@@ -9,10 +9,10 @@ export const StyledFooter = styled.footer`
 
 export const Link = styled.a`
     margin-left: 5px;
-    color: #296e54;
+    color: ${({theme}) => theme.color.seaGreen};
     text-decoration: none;
 
     &:hover {
-        color: rgb(246, 133, 133);
+        color: ${({theme}) => theme.color.froly};
     }
 `;

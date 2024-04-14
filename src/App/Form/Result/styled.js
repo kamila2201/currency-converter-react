@@ -6,5 +6,5 @@ export const Wrapper = styled.p`
 
 export const Text = styled.strong`
     padding-left: 5px;
-    color: #296e54;
+    color: ${({theme}) => theme.color.seaGreen};
 `;

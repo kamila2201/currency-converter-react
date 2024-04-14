@@ -13,8 +13,8 @@ export const Fieldset = styled.fieldset`
 
 export const Legend = styled.legend`
     padding: 10px;
-    color: white;
-    background-color: #296e54;
+    color: ${({theme}) => theme.color.white};
+    background-color: ${({theme}) => theme.color.seaGreen};;
     border-radius: 5px;
 `;
 
@@ -31,17 +31,17 @@ export const Field = styled.input`
     width: 100%;
     max-width: 400px;
     font-weight: 700;
-    border: 2px solid black;
+    border: 2px solid ${({theme}) => theme.color.black};;
     border-radius: 5px;
-    -webkit-box-shadow: 0px 0px 9px 3px rgba(66, 68, 90, 1);
-    -moz-box-shadow: 0px 0px 9px 3px rgba(66, 68, 90, 1);
-    box-shadow: 0px 0px 9px 3px rgba(66, 68, 90, 1);
+    -webkit-box-shadow: 0px 0px 9px 3px ${({theme}) => theme.color.gunPowder};;
+    -moz-box-shadow: 0px 0px 9px 3px rgba${({theme}) => theme.color.gunPowder};;
+    box-shadow: 0px 0px 9px 3px ${({theme}) => theme.color.gunPowder};
 
     &:required {
         border-width: 4px;
     }
     &:invalid {
-        background-color: rgb(242, 183, 183);
+        background-color: ${({theme}) => theme.color.mandysPink};;
     }
 `;
 
@@ -55,8 +55,8 @@ export const Button = styled.button`
     flex-basis:300px;
     margin-top: 10px;
     padding: 10px;
-    color: white;
-    background-color: #296e54;
+    color: ${({theme}) => theme.color.white};
+    background-color: ${({theme}) => theme.color.seaGreen};;
     border: none;
     border-radius: 5px;
 
