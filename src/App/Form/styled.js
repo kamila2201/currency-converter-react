@@ -59,13 +59,14 @@ export const Button = styled.button`
     background-color: ${({theme}) => theme.color.seaGreen};;
     border: none;
     border-radius: 5px;
+    transition: filter .3s;
 
     &:hover{
-        background-color: #598c79;
+        filter: brightness(110%);
     }
 
     &:active {
-        border: 2px solid #296e54;
+        filter: brightness(120%);
     }
 `;
 
