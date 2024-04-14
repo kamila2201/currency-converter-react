@@ -9,11 +9,13 @@ Currency converter is a project created in React.js. It is a simple calculator w
 ## Technologies used
 - React
 - HTML
-- CSS with BEM convention
+- CSS 
 - JavaScript
 - MediaQueries
 - Flex
 - Immutability
+- Styled Components
+- Custom Hooks
 
 ## Check it out!
 
