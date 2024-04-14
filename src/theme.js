@@ -8,4 +8,7 @@ export const theme = {
         gunPowder: "#42445a",
         semiTransparent: "#ffffffd3",
     },
+    breakpoint: {
+        mobileMax: 767,
+    }
 };
