@@ -11,6 +11,7 @@ export const Link = styled.a`
     margin-left: 5px;
     color: ${({theme}) => theme.color.seaGreen};
     text-decoration: none;
+    transition: color .3s;
 
     &:hover {
         color: ${({theme}) => theme.color.froly};
