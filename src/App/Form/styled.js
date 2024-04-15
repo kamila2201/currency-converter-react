@@ -31,7 +31,7 @@ export const Field = styled.input`
     width: 100%;
     max-width: 400px;
     font-weight: 700;
-    border: 2px solid ${({theme}) => theme.color.black};;
+    border: 2px solid ${({theme}) => theme.color.black};
     border-radius: 5px;
     box-shadow: 0px 0px 9px 3px ${({theme}) => theme.color.gunPowder};
 
@@ -39,7 +39,7 @@ export const Field = styled.input`
         border-width: 4px;
     }
     &:invalid {
-        background-color: ${({theme}) => theme.color.mandysPink};;
+        background-color: ${({theme}) => theme.color.mandysPink};
     }
 `;
 
