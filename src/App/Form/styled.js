@@ -7,14 +7,14 @@ export const StyledForm = styled.form`
 `;
 
 export const Fieldset = styled.fieldset`
-    border: 2px solid #296e54;
+    border: 2px solid ${({theme}) => theme.color.seaGreen};
     border-radius: 5px;
 `;
 
 export const Legend = styled.legend`
     padding: 10px;
     color: ${({theme}) => theme.color.white};
-    background-color: ${({theme}) => theme.color.seaGreen};;
+    background-color: ${({theme}) => theme.color.seaGreen};
     border-radius: 5px;
 `;
 
