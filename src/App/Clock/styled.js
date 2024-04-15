@@ -7,4 +7,4 @@ export const Wrapper = styled.p`
     text-align: right;
     font-size: 15px;
     font-weight: 500;
-`
+`;
