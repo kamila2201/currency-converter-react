@@ -33,8 +33,6 @@ export const Field = styled.input`
     font-weight: 700;
     border: 2px solid ${({theme}) => theme.color.black};;
     border-radius: 5px;
-    -webkit-box-shadow: 0px 0px 9px 3px ${({theme}) => theme.color.gunPowder};;
-    -moz-box-shadow: 0px 0px 9px 3px rgba${({theme}) => theme.color.gunPowder};;
     box-shadow: 0px 0px 9px 3px ${({theme}) => theme.color.gunPowder};
 
     &:required {
