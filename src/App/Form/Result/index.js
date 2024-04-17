@@ -1,7 +1,6 @@
 import { Wrapper, Text } from "./styled";
 
 const Result = ({ result }) => (
-
     <Wrapper>
         {!!result && (
             <p>
