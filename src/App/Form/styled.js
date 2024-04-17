@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const StyledForm = styled.form`
-    margin: 20px;
-    padding: 10px;
+    margin: 20px 20px 0;
+    padding: 10px 10px 0;
     font-size: 20px;
 `;
 
