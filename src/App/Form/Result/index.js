@@ -1,14 +1,17 @@
-import {Wrapper, Text} from "./styled";
+import { Wrapper, Text } from "./styled";
 
 const Result = ({ result }) => (
-    !!result && (
-        <Wrapper>
-            You will receive
-            <Text>
-                {result.finalAmount.toFixed(2)}&nbsp;{result.currency}
-            </Text>
-        </Wrapper>
-    )
+
+    <Wrapper>
+        {!!result && (
+            <p>
+                You will receive
+                <Text>
+                    {result.finalAmount.toFixed(2)}&nbsp;{result.currency}
+                </Text>
+            </p>
+        )}
+    </Wrapper>
 )
 
 export default Result;
