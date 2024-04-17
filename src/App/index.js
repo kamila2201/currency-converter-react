@@ -4,6 +4,7 @@ import Container from './Container';
 import Header from './Header';
 import Form from './Form';
 import Clock from './Clock';
+import Footer from './Footer'
 
 function App() {
   const [result, setResult] = useState("");
@@ -22,6 +23,7 @@ function App() {
       <Clock />
       <Header />
       <Form result={result} calculateResult={calculateResult} />
+      <Footer />
     </Container>
   );
 }

@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import Footer from "./Footer";
 import Result from "./Result";
 import { currencies } from "../currencies";
 import {
@@ -73,7 +72,6 @@ const Form = ({ result, calculateResult }) => {
                 </Button>
             </End>
             <Result result={result} />
-            <Footer />
         </StyledForm>
     )
 }

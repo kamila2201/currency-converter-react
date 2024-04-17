@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const StyledFooter = styled.footer`
-    margin-top:10px;
     text-align: center;
     font-size: 15px;
     font-weight: 500;
