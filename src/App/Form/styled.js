@@ -7,14 +7,14 @@ export const StyledForm = styled.form`
 `;
 
 export const Fieldset = styled.fieldset`
-    border: 2px solid ${({theme}) => theme.color.seaGreen};
+    border: 2px solid ${({ theme }) => theme.color.seaGreen};
     border-radius: 5px;
 `;
 
 export const Legend = styled.legend`
     padding: 10px;
-    color: ${({theme}) => theme.color.white};
-    background-color: ${({theme}) => theme.color.seaGreen};
+    color: ${({ theme }) => theme.color.white};
+    background-color: ${({ theme }) => theme.color.seaGreen};
     border-radius: 5px;
 `;
 
@@ -31,15 +31,15 @@ export const Field = styled.input`
     width: 100%;
     max-width: 400px;
     font-weight: 700;
-    border: 2px solid ${({theme}) => theme.color.black};
+    border: 2px solid ${({ theme }) => theme.color.black};
     border-radius: 5px;
-    box-shadow: 0px 0px 9px 3px ${({theme}) => theme.color.gunPowder};
+    box-shadow: 0px 0px 9px 3px ${({ theme }) => theme.color.gunPowder};
 
     &:required {
         border-width: 4px;
     }
     &:invalid {
-        background-color: ${({theme}) => theme.color.mandysPink};
+        background-color: ${({ theme }) => theme.color.mandysPink};
     }
 `;
 
@@ -53,8 +53,8 @@ export const Button = styled.button`
     flex-basis:300px;
     margin-top: 10px;
     padding: 10px;
-    color: ${({theme}) => theme.color.white};
-    background-color: ${({theme}) => theme.color.seaGreen};;
+    color: ${({ theme }) => theme.color.white};
+    background-color: ${({ theme }) => theme.color.seaGreen};;
     border: none;
     border-radius: 5px;
     transition: filter .3s;
