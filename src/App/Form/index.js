@@ -12,9 +12,19 @@ import {
 } from "./styled";
 
 
-const Form = ({ result, calculateResult }) => {
+const Form = () => {
     const [amount, setAmount] = useState("");
     const [currency, setCurrency] = useState(currencies[0].shortName)
+    const [result, setResult] = useState("");
+
+    const calculateResult = (currency, amount) => {
+        const rate = currencies.find(({ shortName }) => shortName === currency).rate;
+
+        setResult({
+            finalAmount: +amount / rate,
+            currency,
+        })
+    }
 
     const onSubmit = (event) => {
         event.preventDefault();
