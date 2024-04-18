@@ -7,8 +7,9 @@ export const theme = {
         froly: "#f68585",
         gunPowder: "#42445a",
         semiTransparent: "#ffffffd3",
+        tallPoppy: "#c82727",
     },
     breakpoint: {
         mobileMax: 767,
-    }
+    },
 };
