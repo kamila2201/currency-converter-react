@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { currencies } from './currencies';
-import Container from './Container';
 import Header from './Header';
 import Form from './Form';
 import Clock from './Clock';
 import Footer from './Footer'
+import { Container } from './styled';
 
 function App() {
   const [result, setResult] = useState("");
